@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pensar y Escribir</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="shortcut icon" href="assets/svg/feather-svgrepo-com.svg" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="sass/styles.css">
+</head>
+<body id="dark-bg">
+  <main class="app-container">
+    <nav class="menu-navegation">
+      <div class="nav__logo">
+        <img class="logo" src="./assets/./svg/coment.svg" alt="comment">
+      </div>
+
+      <ul class="nav__bar">
+        <li class="bar__item active">
+          <a class="item__box" href="#"><i class='bx bx-home bx-lg'></i></i></a>
+        </li>
+
+        <li class="bar__item">
+          <a class="item__box" href="#"><i class='bx bx-heart bx-lg'></i></a>
+        </li>
+
+        <li class="bar__item">
+          <a class="item__box" href="#"><i class='bx bx-calendar bx-lg'></i></a>
+        </li>
+
+        <li class="bar__item">
+          <a class="item__box" href="#"><i class='bx bx-donate-heart bx-lg'></i></a>
+        </li>
+
+        <li class="bar__item">
+          <a class="item__box" href="#" id="moon"><i class='bx bx-moon bx-lg'></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- <============SECTION NOTES==============> -->
+
+    <section class="container-notas">
+      <header class="notas__search-add">
+        <form class="form__search" action="#">
+          <div class="content__search">
+            <input class="search__input" id="search-input" type="text" placeholder="Buscar">
+            <button class="search__btn">
+              <i class='bx bx-search bx-md'></i>
+            </button>
+          </div>
+        </form>
+
+        <button class="add-btn" id="open-modal">
+          <span class="btn__icon">
+            <i class='bx bx-plus bx-md'></i>
+          </span>
+          <span class="btn__text">Crear Nota</span>
+        </button>
+      </header>
+
+      <article class="notas__presentacion">
+        <h1 class="header__title text-dark">Escribe lo que piensas</h1>
+
+        <div class="notas__tarjet">
+          <div class="tarjet">
+            <div class="tarjet__img">
+              <i class='bx bx-cloud bx-lg'></i>
+            </div>
+
+            <div class="tarjet__text">
+              <h3 class="tarjet__title">Sueña</h3>
+            </div>
+          </div>
+
+          <div class="tarjet">
+            <div class="tarjet__img">
+              <i class='bx bx-shield bx-lg'></i>
+            </div>
+            
+            <div class="tarjet__text">
+              <h3 class="tarjet__title">Fortalece</h3>
+            </div>
+          </div>
+
+          <div class="tarjet">
+            <div class="tarjet__img">
+              <i class='bx bx-message-dots bx-lg'></i>
+            </div>
+            
+            <div class="tarjet__text">
+              <h3 class="tarjet__title">Comenta</h3>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="crear__notas">
+        <h2 class="notas__title text-dark">Mis Notas</h2>
+
+        <div class="note-list" id="note-list">
+          
+        </div>
+      </article>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">
+              <i class='bx bx-x bx-lg'></i>
+            </span>
+
+            <textarea class="input__note" name="note" id="note-input" placeholder="Escribir Nota"></textarea>
+            <button class="btn-add" id="add-note">Crear</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/app.js"></script>
+</body>
+</html>

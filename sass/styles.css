@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul, li {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F6F8;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0.5rem;
+}
+
+.app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: local("Circe Bold"), local("Circe-Bold"), url("../assets/fonts/Circe-Bold.woff2") format("woff2"), url("../assets/fonts/Circe-Bold.woff") format("woff"), url("../assets/fonts/Circe-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.menu-navegation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  padding: 2rem 0;
+  justify-content: space-between;
+  position: fixed;
+  width: 10rem;
+  height: 100%;
+  background-color: #4E0026;
+}
+.menu-navegation .nav__logo {
+  width: 4rem;
+}
+.menu-navegation .nav__bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.menu-navegation .nav__bar .bar__item {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #590F33;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.menu-navegation .nav__bar .bar__item.active {
+  background-color: white;
+}
+.menu-navegation .nav__bar .bar__item.active .item__box .bx {
+  color: black;
+}
+.menu-navegation .nav__bar .bar__item:hover {
+  background-color: white;
+}
+.menu-navegation .nav__bar .bar__item:hover .item__box .bx {
+  color: black;
+}
+.menu-navegation .nav__bar .item__box .bx {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .menu-navegation {
+    padding: 0 2rem;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-navegation .nav__bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@font-face {
+  font-family: "Circe";
+  src: local("Circe Bold"), local("Circe-Bold"), url("../assets/fonts/Circe-Bold.woff2") format("woff2"), url("../assets/fonts/Circe-Bold.woff") format("woff"), url("../assets/fonts/Circe-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.container-notas {
+  margin-left: 10rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container-notas .notas__search-add {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-notas .notas__search-add .content__search {
+  position: relative;
+  width: 22rem;
+  height: 4rem;
+}
+.container-notas .notas__search-add .content__search .search__input {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: 0 0 2px 0 rgb(151, 151, 151);
+  outline: none;
+  font-size: 1.5rem;
+}
+.container-notas .notas__search-add .content__search .search__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #4156F5;
+  border: 0;
+  border-radius: 1rem;
+  width: 4rem;
+  height: 4rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.container-notas .notas__search-add .content__search .search__btn:hover {
+  background-color: rgb(34, 34, 240);
+}
+.container-notas .notas__search-add .content__search .search__btn .bx {
+  color: white;
+}
+.container-notas .notas__search-add .add-btn {
+  width: 20rem;
+  height: 5rem;
+  background-color: #4156F5;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.container-notas .notas__search-add .add-btn:hover {
+  background-color: rgb(34, 34, 240);
+}
+.container-notas .notas__search-add .add-btn .btn__icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  justify-content: center;
+}
+.container-notas .notas__search-add .add-btn .btn__text {
+  font-size: 1.8rem;
+  color: white;
+  font-family: "Circe", sans-serif;
+}
+.container-notas .notas__presentacion {
+  margin-top: 2rem;
+}
+.container-notas .notas__presentacion .header__title {
+  font-size: 4rem;
+  font-family: "Circe", sans-serif;
+}
+.container-notas .notas__presentacion .notas__tarjet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-notas .notas__presentacion .notas__tarjet .tarjet {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.container-notas .notas__presentacion .notas__tarjet .tarjet:nth-child(1) {
+  background-color: #FF5440;
+}
+.container-notas .notas__presentacion .notas__tarjet .tarjet:nth-child(2) {
+  background-color: #FFB700;
+}
+.container-notas .notas__presentacion .notas__tarjet .tarjet:nth-child(3) {
+  background-color: #4156F5;
+}
+.container-notas .notas__presentacion .notas__tarjet .tarjet .tarjet__img {
+  width: 5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+.container-notas .notas__presentacion .notas__tarjet .tarjet .tarjet__text .tarjet__title {
+  font-family: "Circe", sans-serif;
+  color: white;
+  font-size: 1.8rem;
+}
+.container-notas .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.container-notas .modal .modal-content {
+  display: flex;
+  width: 30rem;
+  height: 40rem;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+}
+.container-notas .modal .modal-content .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.container-notas .modal .modal-content .input__note {
+  margin-top: 5rem;
+  width: 100%;
+  height: 23rem;
+  resize: none;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  outline: none;
+  border-radius: 1rem;
+  border: thin solid gray;
+  padding: 1rem;
+}
+.container-notas .modal .modal-content .btn-add {
+  width: 20rem;
+  height: 4rem;
+  border: none;
+  background-color: #4156F5;
+  font-family: "Circe", sans-serif;
+  font-size: 2rem;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.container-notas .modal .modal-content .btn-add:hover {
+  background-color: rgb(34, 34, 240);
+}
+.container-notas .crear__notas {
+  margin-top: 2rem;
+}
+.container-notas .crear__notas .notas__title {
+  font-size: 3rem;
+  font-family: "Circe", sans-serif;
+  margin-bottom: 2rem;
+}
+.container-notas .crear__notas .note-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.container-notas .crear__notas .note-list .nota {
+  width: 30rem;
+  position: relative;
+  height: 25rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 1rem;
+  font-family: "Raleway", sans-serif;
+  border-radius: 1rem;
+}
+.container-notas .crear__notas .note-list .nota .nota-close {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.container-notas .crear__notas .note-list .nota .nota-text {
+  margin-top: 5rem;
+}
+
+.bg-dark {
+  background-color: #10132D;
+}
+
+.text-white {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .container-notas {
+    margin: 0;
+    margin-top: 8rem;
+  }
+  .container-notas .notas__search-add .add-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+  .container-notas .notas__search-add .add-btn .btn__text {
+    display: none;
+  }
+  .container-notas .notas__presentacion .notas__tarjet .tarjet {
+    width: 7rem;
+  }
+  .container-notas .notas__presentacion .notas__tarjet .tarjet .tarjet__text {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

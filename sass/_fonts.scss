@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+@font-face {
+  font-family: 'Circe';
+  src: local('Circe Bold'), local('Circe-Bold'),
+      url('../assets/fonts/Circe-Bold.woff2') format('woff2'),
+      url('../assets/fonts/Circe-Bold.woff') format('woff'),
+      url('../assets/fonts/Circe-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+$fontRaleway:'Raleway', sans-serif;
+$fontCirce: 'Circe', sans-serif;
