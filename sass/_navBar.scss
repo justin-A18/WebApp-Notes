@@ -63,15 +63,15 @@
         width: 100%;
         height: 8rem;
         display: flex;
+        justify-content: center;
         flex-direction: row;
 
-        .nav-logo{
+        .nav__logo{
             display: none;
         }
 
         .nav__bar{
             display: flex;
-            align-items: center;
             flex-direction: row;
         }
     }
